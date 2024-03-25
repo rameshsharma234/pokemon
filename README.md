@@ -1,6 +1,17 @@
 # Pokemon
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.1.
+Home page:
+<img width="1069" alt="image" src="https://github.com/rameshsharma234/pokemon/assets/13268962/0b211b42-5be3-4dd3-80b7-94588a1a1101">
+
+DetailView:
+<img width="1073" alt="image" src="https://github.com/rameshsharma234/pokemon/assets/13268962/c6b286cf-314f-42d2-998e-84c940deb179">
+
+Evolutions:
+<img width="1079" alt="image" src="https://github.com/rameshsharma234/pokemon/assets/13268962/a7c90215-2ffa-4b21-a2a3-c8251f3d3511">
+
+
+
 
 ## Development server
 
