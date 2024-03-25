@@ -1,0 +1,23 @@
+.card {
+  max-width: 300px;
+  width: 300px;
+  height: 350px;
+  padding: 20px;
+}
+:host {
+  max-width: 300px;
+}
+
+.content {
+  height: 250px;
+  display: flex !important;
+}
+
+img {
+  object-fit: "cover";
+  max-height: 250px;
+}
+
+.highlight {
+ border: 5px solid #2c23a0;
+}

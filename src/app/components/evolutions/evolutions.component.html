@@ -1,0 +1,11 @@
+<div class="flex flex-wrap gap-8">
+  @if(evolutionData) { @for (item of evolutionData; track item.url; let last =
+  $last) {
+  <div class="card-container flex items-center justify-center flex-30">
+    <app-pokemon-card [data]="item" [selectedPokemon]="selectedPokemonName" ></app-pokemon-card>
+    @if(!last) {
+    <div class="text-bold px-8">&#8594;</div>
+    }
+  </div>
+  } }
+</div>

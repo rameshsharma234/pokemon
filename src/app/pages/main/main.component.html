@@ -1,0 +1,9 @@
+
+<div class="grid grid-cols-3 gap-8">
+    @for (item of pokemonData; track item.url) {
+      <div class="card-container flex-30">
+      <app-pokemon-card [data]="item"></app-pokemon-card>
+    </div>
+    }
+  </div>
+
