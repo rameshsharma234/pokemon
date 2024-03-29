@@ -10,6 +10,10 @@ DetailView:
 Evolutions:
 <img width="1079" alt="image" src="https://github.com/rameshsharma234/pokemon/assets/13268962/a7c90215-2ffa-4b21-a2a3-c8251f3d3511">
 
+Unit Test cases:
+<img width="767" alt="image" src="https://github.com/rameshsharma234/pokemon/assets/13268962/40f71807-9f55-407d-b213-0c51f235c05a">
+
+
 
 
 
