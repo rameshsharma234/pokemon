@@ -1,8 +1,8 @@
 export interface IPokemonAPIResponse {
   results: { name: string; url: string }[];
   next: string;
-  count: string;
-  previous: string;
+  count: number;
+  previous: string | null;
 }
 
 export interface IPokemonDetail {

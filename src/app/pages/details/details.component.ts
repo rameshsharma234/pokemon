@@ -35,18 +35,19 @@ export class DetailsComponent implements OnInit {
   loadSpecies() {
     this.pokeMonService.fetchDataFromUrl(this.pokemonData.species.url).pipe(
       switchMap((response1) => {
+        console.log("response1", response1);
         return this.pokeMonService.fetchDataFromUrl(response1?.evolution_chain?.url).pipe(
           switchMap((response2) => {
+            console.log("response2", response2);
             let evoChain = [];
             let evoData = response2.chain;
-
             do {
               let evoDetails = evoData['evolution_details'][0];
 
               evoChain.push({
-                "species_name": evoData.species.name,
+                "species_name": evoData.species?.name,
                 "min_level": !evoDetails ? 1 : evoDetails.min_level,
-                "url":evoData.species.url,
+                "url":evoData.species?.url,
               });
 
               evoData = evoData['evolves_to'][0];

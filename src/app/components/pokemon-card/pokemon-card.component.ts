@@ -22,7 +22,7 @@ export class PokemonCardComponent implements OnInit {
   private pokemonSerice = inject(PokemonService);
   private router = inject(Router);
   ngOnInit(): void {
-    this.pokemonSerice.fetchDataFromUrl(this.data.url).subscribe((result) => {
+    this.pokemonSerice.fetchDataFromUrl(this.data?.url).subscribe((result) => {
       console.log('result', result);
       this.pokemonData = result;
       this.imageUrl = result.sprites?.other?.dream_world?.front_default;
@@ -30,7 +30,7 @@ export class PokemonCardComponent implements OnInit {
   }
 
   goToDetailView() {
-    let pokemonId = this.data?.url?.split('/').slice(-2)?.[0];
+    const pokemonId = this.data?.url?.split('/').slice(-2)?.[0];
     console.log("pokemonId", pokemonId);
     this.router.navigate(['/pokemons/details',pokemonId ], {state: this.pokemonData});
   }
